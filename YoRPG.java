@@ -107,7 +107,7 @@ public class YoRPG
 	if (choice == 5){pat = new Rogue(name);}
 	else{ pat = new Warrior( name);}
 	
-	}stat
+    }
 	//end newGame()
 
 
