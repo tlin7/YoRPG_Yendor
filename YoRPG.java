@@ -55,6 +55,7 @@ public class YoRPG
       =============================================*/
     public void newGame()
     {
+	clearOut();
 	String s;
 	String name = "";
 	s = "~~~ Welcome to Ye Olde RPG! ~~~\n";
@@ -71,6 +72,7 @@ public class YoRPG
 	}
 	catch ( IOException e ) { }
 	//======================================================================
+	clearOut();
 	s = "Intrepid warrior, what doth thy call thyself? (State your name): ";
 	System.out.print( s );
 
@@ -79,6 +81,7 @@ public class YoRPG
 	}
 	catch ( IOException e ) { }
 	//======================================================================
+	clearOut();
 	s = "Pick your profession please:\n";
 
 	s += "\t1: Warrior\n";
@@ -116,7 +119,7 @@ public class YoRPG
     {
 	int i = 1;
 	int d1, d2;
-
+	clearOut();
 	if ( Math.random() >= ( difficulty / 3.0 ) )
 	    System.out.println( "\nNothing to see here. Move along!" );
 	else {
@@ -135,7 +138,7 @@ public class YoRPG
 		    i = Integer.parseInt( in.readLine() );
 		}
 		catch ( IOException e ) { }
-
+		clearOut();
 		if ( i == 2 )
 		    pat.specialize();
 		else
@@ -175,6 +178,9 @@ public class YoRPG
     }//end playTurn()
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+    public void clearOut(){
+	System.out.println( "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+    }
 
     public static void main( String[] args )
     {
