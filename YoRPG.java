@@ -58,7 +58,7 @@ public class YoRPG
 	String s;
 	String name = "";
 	s = "~~~ Welcome to Ye Olde RPG! ~~~\n";
-
+	s += "Team Yendor - Ibnul, Noah, Tommy";
 	s += "\nChoose your difficulty: \n";
 	s += "\t1: Easy\n";
 	s += "\t2: Not so easy\n";
