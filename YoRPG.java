@@ -104,19 +104,19 @@ public class YoRPG
 	    clearOut();
 	    System.out.println("Greetings, Warrior!");
 	}
-	if (choice == 2){pat = new Baker( name);
+	else if (choice == 2){pat = new Baker( name);
 	    clearOut();
 	    System.out.println("Greetings, Baker!");
 	}
-	if (choice == 3){pat = new Mage(name);
+	else if (choice == 3){pat = new Mage(name);
 	    clearOut();
 	    System.out.println("Greetings, Mage!");
 	}
-	if (choice == 4){pat = new Summoner(name);
+	else if (choice == 4){pat = new Summoner(name);
 	    clearOut();
 	    System.out.println("Greetings, Summoner!");
 	}
-	if (choice == 5){pat = new Rogue(name);
+	else if (choice == 5){pat = new Rogue(name);
 	    clearOut();
 	    System.out.println("Greetings, Rogue!");
 	}
