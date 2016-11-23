@@ -88,6 +88,7 @@ public class YoRPG
 	s += "\t2: Baker\n";
 	s += "\t3: Mage\n";
 	s += "\t4: Summoner\n";
+	s += "\t5: Rogue\n";
 	s += "Selection: ";
 	System.out.print( s );
 	
@@ -103,9 +104,10 @@ public class YoRPG
 	if (choice == 2){pat = new Baker( name);}
 	if (choice == 3){pat = new Mage(name);}
 	if (choice == 4){pat = new Summoner(name);}
+	if (choice == 5){pat = new Rogue(name);}
 	else{ pat = new Warrior( name);}
 	
-	}
+	}stat
 	//end newGame()
 
 
