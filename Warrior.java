@@ -5,6 +5,7 @@ public class Warrior extends Character{
     public Warrior(String newname ){
 	name = newname;
 	hp =125;
+	maxhp =125;
 	strength = 100;
 	defense = 40;
 	attackrating = 0.4;

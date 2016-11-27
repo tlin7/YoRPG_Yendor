@@ -5,6 +5,7 @@ public class Summoner extends Character{
     public Summoner(String newname ){
 	name = newname;
 	hp =125;
+	maxhp=125;
 	strength = 100;
 	defense = 40;
 	attackrating = 0.4;

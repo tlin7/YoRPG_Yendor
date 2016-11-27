@@ -139,10 +139,11 @@ public class YoRPG
     {
 	int i = 1;
 	int d1, d2;
+	pat.setHealthbar();
 	if ( Math.random() >= ( difficulty / 3.0 ) )
-	    System.out.println( "\nNothing to see here. Move along!" );
+	    System.out.println("\n"+pat.healthbar+ "\n\n\n\nNothing to see here. Move along!" );
 	else {
-	    System.out.println( "\nLo, yonder monster approacheth!" );
+	    System.out.println("\n"+pat.healthbar+ "\n\n\n\nLo, yonder monster approacheth!" );
 
 	    smaug = new Monster();
 
@@ -165,8 +166,9 @@ public class YoRPG
 
 		d1 = pat.attack( smaug );
 		d2 = smaug.attack( pat );
-
-		System.out.println( "\n" + pat.getName() + " dealt " + d1 +
+		pat.setHealthbar();
+		
+		System.out.println( "\n"+pat.healthbar+"\n\n\n\n" + pat.getName() + " dealt " + d1 +
 				    " points of damage.");
 
 		System.out.println( "\n" + "Ye Olde Monster smacked " + pat.getName() +
