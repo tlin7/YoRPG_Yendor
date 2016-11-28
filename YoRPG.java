@@ -199,7 +199,7 @@ public class YoRPG
     }//end playTurn()
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    public void clearOut(){
+    public static void clearOut(){
 	System.out.println( "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     }
 
@@ -219,6 +219,7 @@ public class YoRPG
 		break;
 	    encounters++;
 	    System.out.println();
+	    clearOut();
 	}
 
 	System.out.println( "Thy game doth be over." );
